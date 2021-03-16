@@ -1,22 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
 }
+
 
 .calc {
     margin: 0 auto;
     margin-top: 5%;
     width: 600px;
     height: 700px;
-    border: 3px solid black;
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.result {
+.calc__result {
     grid-column: 1/6;
     grid-row:1/2;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 60px;
+    padding: 0 auto;
+}
+
+.calc__card {
+    font-size: 30px;
+    border: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 99%;
+    height: 99%;
+    background-color: black;
+    color: white;
+    transition: all 0.1s ease-in-out;
+    opacity: 1;
+}
+
+.calc__card:hover {
+    background-color: white;
+    color:black;
+    opacity: 0.7;
+}
+
+.calc__operations {
+    float: right;
+    margin-top: 5%;
 }
 
 .number0 {
@@ -123,3 +155,5 @@ body {
     grid-column:5/6;
     grid-row:5/6;
 }
+
+
