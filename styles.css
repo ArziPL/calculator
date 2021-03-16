@@ -4,6 +4,22 @@
 body {
     margin: 0;
     padding: 0;
+
+    background: linear-gradient(-90deg, red, purple, blue, yellow);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -20,12 +36,17 @@ body {
 .calc__result {
     grid-column: 1/6;
     grid-row:1/2;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-    border-left: 3px solid black;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 60px;
     padding: 0 auto;
+    background-color: white;
+    opacity:0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.calc__result:hover {
+    background-color: black;
+    color:white;
 }
 
 .calc__card {
@@ -36,20 +57,21 @@ body {
     height: 99%;
     background-color: black;
     color: white;
-    transition: all 0.1s ease-in-out;
-    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 .calc__card:hover {
     background-color: white;
     color:black;
-    opacity: 0.7;
 }
 
 .calc__operations {
     float: right;
+    margin-right: 1%;
     margin-top: 5%;
 }
+
+
 
 .number0 {
     grid-column: 2/3;
