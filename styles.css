@@ -7,7 +7,11 @@ body {
 
     background: linear-gradient(-90deg, red, purple, blue, yellow);
 	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
+	animation: gradient 25s ease infinite;
+}
+
+button {
+    all: unset;
 }
 
 @keyframes gradient {
@@ -39,15 +43,49 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 60px;
     padding: 0 auto;
-    background-color: white;
+    background-color: black;
+    color: white;
     opacity:0.7;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor:pointer;
 }
 
 .calc__result:hover {
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
 }
+
+.calc__result:active {
+    background-color: white;
+    color: black;
+}
+
+
+.calc__copied {
+    position: absolute; 
+    left: 50%;
+    transform: translate(-50%, 0); 
+    top:8.5%;
+    font-size: 130px;
+    display: none;
+    transition: all 1 ease;
+}
+
+.calc__result:active > .calc__copied {
+    display: inline;
+    opacity: 1;
+}
+
+
+
+.calc__operations {
+    position: relative;
+    float: right;
+    margin-right: 1%;
+    margin-top: 5%;
+}
+
+
 
 .calc__card {
     font-size: 30px;
@@ -57,7 +95,9 @@ body {
     height: 99%;
     background-color: black;
     color: white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.01s ease-in-out;
+    text-align: center;
+    cursor:pointer;
 }
 
 .calc__card:hover {
@@ -65,11 +105,12 @@ body {
     color:black;
 }
 
-.calc__operations {
-    float: right;
-    margin-right: 1%;
-    margin-top: 5%;
+.calc__card:active {
+    transform: scale(0.7);
 }
+
+
+
 
 
 
