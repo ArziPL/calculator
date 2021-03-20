@@ -69,6 +69,7 @@ button {
     font-size: 130px;
     display: none;
     transition: all 1 ease;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .calc__result:active > .calc__copied {
