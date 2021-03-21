@@ -1,2 +1,2 @@
-# simple-calculator
-Simple JS calculator with some cool styles
+# cool-calculator
+Simple vanilla JS calculator with some cool styles
