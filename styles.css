@@ -1,230 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    background: linear-gradient(-90deg, red, purple, blue, yellow);
-	background-size: 400% 400%;
-	animation: gradient 25s ease infinite;
+  background: linear-gradient(-90deg, red, purple, blue, yellow);
+  background-size: 400% 400%;
+  animation: gradient 25s ease infinite;
 }
 
 button {
-    all: unset;
+  all: unset;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-
 .calc {
-    margin: 0 auto;
-    margin-top: 5%;
-    width: 600px;
-    height: 700px;
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 600px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .calc__result {
-    grid-column: 1/6;
-    grid-row:1/2;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 60px;
-    padding: 0 auto;
-    background-color: black;
-    color: white;
-    opacity:0.7;
-    transition: all 0.2s ease-in-out;
-    cursor:pointer;
+  grid-column: 1/6;
+  grid-row: 1/2;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 60px;
+  padding: 0 auto;
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .calc__result:hover {
-    background-color: white;
-    color:black;
+  background-color: white;
+  color: black;
 }
 
 .calc__result:active {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .calc__symbol {
-    position: relative;
-    float: left;
-    margin-left: 2%;
-    margin-top: 5%;
+  position: relative;
+  float: left;
+  margin-left: 2%;
+  margin-top: 5%;
 }
 
-
 .calc__copied {
-    position: absolute; 
-    left: 50%;
-    transform: translate(-50%, 0); 
-    top:8.5%;
-    font-size: 130px;
-    display: none;
-    transition: all 1 ease;
-    font-family: 'Montserrat Alternates', sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 8.5%;
+  font-size: 130px;
+  display: none;
+  transition: all 1 ease;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .calc__result:active > .calc__copied {
-    display: inline;
-    opacity: 1;
+  display: inline;
+  opacity: 1;
 }
-
-
 
 .calc__operations {
-    position: relative;
-    float: right;
-    margin-right: 1%;
-    margin-top: 5%;
+  position: relative;
+  float: right;
+  margin-right: 1%;
+  margin-top: 5%;
 }
 
-
-
 .calc__card {
-    font-size: 30px;
-    border: none;
-    font-family: 'Montserrat Alternates', sans-serif;
-    width: 99%;
-    height: 99%;
-    background-color: black;
-    color: white;
-    transition: all 0.01s ease-in-out;
-    text-align: center;
-    cursor:pointer;
+  font-size: 30px;
+  border: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 99%;
+  height: 99%;
+  background-color: black;
+  color: white;
+  transition: all 0.01s ease-in-out;
+  text-align: center;
+  cursor: pointer;
 }
 
 .calc__card:hover {
-    background-color: white;
-    color:black;
+  background-color: white;
+  color: black;
 }
 
 .calc__card:active {
-    transform: scale(0.7);
+  transform: scale(0.7);
 }
 
-
-
-
-
-
 .number0 {
-    grid-column: 2/3;
-    grid-row: 5/6;
+  grid-column: 2/3;
+  grid-row: 5/6;
 }
 
 .number1 {
-    grid-column: 1/2;
-    grid-row: 4/5;
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 
 .number2 {
-    grid-column: 2/3;
-    grid-row: 4/5;
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
 
 .number3 {
-    grid-column: 3/4;
-    grid-row: 4/5;
+  grid-column: 3/4;
+  grid-row: 4/5;
 }
 
 .number3 {
-    grid-column: 3/4;
-    grid-row: 4/5;
+  grid-column: 3/4;
+  grid-row: 4/5;
 }
 
 .number4 {
-    grid-column:1/2;
-    grid-row:3/4;
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
 
 .number5 {
-    grid-column:2/3;
-    grid-row:3/4;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 .number6 {
-    grid-column:3/4;
-    grid-row:3/4;
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 .number7 {
-    grid-column:1/2;
-    grid-row:2/3;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .number8 {
-    grid-column:2/3;
-    grid-row:2/3;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .number9 {
-    grid-column:3/4;
-    grid-row:2/3;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 .comma {
-    grid-column:1/2;
-    grid-row:5/6;
+  grid-column: 1/2;
+  grid-row: 5/6;
 }
 
 .clearOne {
-    grid-column:4/5;
-    grid-row:2/3;
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
 
 .clearEverything {
-    grid-column:5/6;
-    grid-row:2/3;
+  grid-column: 5/6;
+  grid-row: 2/3;
 }
 
 .submit {
-    grid-column:3/4;
-    grid-row:5/6;
+  grid-column: 3/4;
+  grid-row: 5/6;
 }
 
 .symbolPlus {
-    grid-column:4/5;
-    grid-row:3/4;
+  grid-column: 4/5;
+  grid-row: 3/4;
 }
 
 .symbolMinus {
-    grid-column:5/6;
-    grid-row:3/4;
+  grid-column: 5/6;
+  grid-row: 3/4;
 }
 
 .symbolMulti {
-    grid-column:4/5;
-    grid-row:4/5;
+  grid-column: 4/5;
+  grid-row: 4/5;
 }
 
 .symbolDivide {
-    grid-column:5/6;
-    grid-row:4/5;
+  grid-column: 5/6;
+  grid-row: 4/5;
 }
 
 .power {
-    grid-column:4/5;
-    grid-row:5/6;
+  grid-column: 4/5;
+  grid-row: 5/6;
 }
 
 .sqrt {
-    grid-column:5/6;
-    grid-row:5/6;
+  grid-column: 5/6;
+  grid-row: 5/6;
 }
-
-
