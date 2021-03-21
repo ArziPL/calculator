@@ -60,6 +60,13 @@ button {
     color: black;
 }
 
+.calc__symbol {
+    position: relative;
+    float: left;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
 
 .calc__copied {
     position: absolute; 

@@ -1,21 +1,15 @@
 const resultBlock = document.querySelector(".calc__result");
 const result = document.querySelector(".calc__operations");
-let inputBtnList = document.querySelectorAll(".calc__card");
-for(ele of inputBtnList) {
-    ele.addEventListener("click", () => {
-        calculations(ele.value);
-    });
-}
+const inputBtnList = document.querySelectorAll(".calc__card");
+let operationSymbol = document.querySelector(".calc__symbol");
 
 
+inputBtnList.forEach(item => {
+    item.addEventListener("click", () => {
+        calculations(item.textContent);
+    })
 
-
-
-function addListnerHandler() {
-   
-}
-
-
+})
 
 
 
@@ -50,8 +44,9 @@ let temporaryValueSec = "";
 let temporarySymbol = "";
 
 function calculations(val) {
-
-    if(/[123456789,]/g.test(val)) {
+        temporaryValueFirst = temporaryValueFirst.toString();
+        temporaryValueSec = temporaryValueSec.toString();
+    if(/[0123456789,]/g.test(val)) {
         if(temporarySymbol != "") {
             if(temporaryValueSec.includes(",") && val == ","){
                 return
@@ -69,7 +64,7 @@ function calculations(val) {
 
 
     if(val == "C") {
-        if(temporarySymbol != "") {
+          if(temporarySymbol != "") {
             result.textContent = result.textContent.slice(0,-1);
             temporaryValueSec = temporaryValueSec.slice(0,-1);
             if(result.textContent == "") {
@@ -77,16 +72,21 @@ function calculations(val) {
                temporaryValueFirst = "";
                temporaryValueSec = "";
                temporarySymbol = "";
-        }
-        return
-        }
-        result.textContent = result.textContent.slice(0,-1);
-        temporaryValue = temporaryValue.slice(0,-1);
-        if(result.textContent == "") {
-            result.textContent = "0";
-
-        }
-        return
+               operationSymbol.textContent = "";
+            }
+           return
+          } else {
+            result.textContent = result.textContent.slice(0,-1);
+            temporaryValueFirst = temporaryValueFirst.slice(0,-1);
+            if(result.textContent == "") {
+                result.textContent = "0";
+                temporaryValueFirst = "";
+                temporaryValueSec = "";
+                temporarySymbol = "";
+                operationSymbol.textContent = "";
+    
+            }
+            }
     }
 
     if(val == "CE") {
@@ -94,10 +94,12 @@ function calculations(val) {
         temporaryValueFirst = "";
         temporarySymbol = "";
         temporaryValueSec = ""
+        operationSymbol.textContent = "";
     }
 
-    if(/[\^&/*+-]/g.test(val)) {
+    if(/sqrt\(\)|[\^$/*+-]/g.test(val)) {
         temporarySymbol = val;
+        operationSymbol.textContent = val;
     }
 
     if(temporaryValueFirst != "" && temporarySymbol != "" && temporaryValueSec != "" && val == "=") {
@@ -105,42 +107,47 @@ function calculations(val) {
             case "+":
                 temporaryValueFirst = result.textContent = parseFloat(temporaryValueFirst) + parseFloat(temporaryValueSec);
                 temporarySymbol = "";
+                operationSymbol.textContent = "";
                 temporaryValueSec = ""
                 break;
             case "-":
                 temporaryValueFirst = result.textContent = parseFloat(temporaryValueFirst) - parseFloat(temporaryValueSec);
                 temporarySymbol = "";
+                operationSymbol.textContent = "";
                 temporaryValueSec = ""
                 break;
             case "*":
                 temporaryValueFirst = result.textContent = parseFloat(temporaryValueFirst) * parseFloat(temporaryValueSec);
                 temporarySymbol = "";
+                operationSymbol.textContent = "";
                 temporaryValueSec = ""
                 break;
             case "/":
                 temporaryValueFirst = result.textContent = parseFloat(temporaryValueFirst) / parseFloat(temporaryValueSec);
                 temporarySymbol = "";
+                operationSymbol.textContent = "";
                 temporaryValueSec = ""
                 break;
             case "^":
                 temporaryValueFirst = result.textContent = Math.pow(parseFloat(temporaryValueFirst),parseFloat(temporaryValueSec));
                 temporarySymbol = "";
+                operationSymbol.textContent = "";
                 temporaryValueSec = ""
                 break;
 
         }
     }
 
-    if(val == "&") {
+    if(val == "sqrt()") {
         temporaryValueFirst = result.textContent = Math.sqrt(parseFloat(temporaryValueFirst));
         temporarySymbol = "";
+        operationSymbol.textContent = "";
         temporaryValueSec = "";
     }
 
 }
 
 
-sqrt\(\)|[\^$/*+-]
 
 
 
