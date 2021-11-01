@@ -6,7 +6,7 @@ HTML/CSS/JS calculator. I spent some time fighting with JS, so i don't think the
 ### USED TECHNOLOGIES
 HTML/CSS/PlainJS
 
-### How to
+### HOW TO
 `index.html`
 
 ### LINKS
