@@ -7,7 +7,7 @@ HTML/CSS/JS calculator. I spent some time fighting with JS, so i don't think the
 HTML/CSS/PlainJS
 
 ### HOW TO
-`index.html`
+Open `index.html`
 
 ### LINKS
 ...
