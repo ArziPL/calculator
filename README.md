@@ -1,14 +1,17 @@
-# cool-calculator
+# <div align="center">cool-calculator</div>
 ***
-### DESCRIPTION
-HTML/CSS/JS calculator. I spent some time fighting with JS, so i don't think there are a lot of bugs, or inadequacy. DRY is for sure not implemented :\
+#### INTRODUCTION
+I had an idea, so i did it. User experience and styles are on high level.
 
-### USED TECHNOLOGIES
+#### DESCRIPTION
+Calculator like calculator, click buttons and do math. If you gonna click at field with result you gonna copy it to clipboard. There should not be any bugs, i think i spent a bit of time making sure it's working in every condition.
+
+#### USED TECHNOLOGIES
 HTML/CSS/PlainJS
 
-### HOW TO
+#### HOW TO
 Open `index.html`
 
-### LINKS
-...
 ***
+
+<div align="center">Hope you had a good time here. If you liked the project, leave a ⭐ and visit <a href="https://github.com/ArziPL">my profile</a> to send feedback, check other projects, or make something cool together</p> 
