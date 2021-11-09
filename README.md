@@ -1,15 +1,25 @@
 # <div align="center">cool-calculator</div>
 ***
-#### INTRODUCTION
-I had an idea, so i did it. User experience and styles are on high level.
+### DESCRIPTION
+Aim of project :  
+I saw some calculator in internet and i thought i can do better one. Lot of work gone into styling.
 
-#### DESCRIPTION
-Calculator like calculator, click buttons and do math. If you gonna click at field with result you gonna copy it to clipboard. There should not be any bugs, i think i spent a bit of time making sure it's working in every condition.
+Description :  
+You can click numbers, operations, **do some math**. After clicking result field the number will be copied (absolutely useful,why nobody does this ?!). I spent some time to make user experience above average.  
 
-#### USED TECHNOLOGIES
-HTML/CSS/PlainJS
+ToDo :  
+- **finished**
+- maybe implement keyboard support
+- for sure implement DRY
 
-#### HOW TO
+### USED TECHNOLOGIES
+<span>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>  
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>  
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>  
+</span>  
+
+### HOW TO
 Open `index.html`
 
 ***
