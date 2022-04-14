@@ -1,16 +1,7 @@
 # <div align="center">cool-calculator</div>
-***
 ### DESCRIPTION
-Aim of project :  
-I saw some calculator in internet and i thought i can do better one. Lot of work gone into styling.
 
-Description :  
-You can click numbers, operations, **do some math**. After clicking result field the number will be copied (absolutely useful,why nobody does this ?!). I spent some time to make user experience above average.  
-
-ToDo :  
-- **finished**
-- maybe implement keyboard support
-- for sure implement DRY
+I saw some calculator in internet and i thought i can do better one. Lot of work gone into styling. You can click numbers, operations, **do some math**. After clicking result field the number will be copied (absolutely useful,why nobody does this ?). I spent some time to make user experience above average.  
 
 ### USED TECHNOLOGIES
 <span>
@@ -20,8 +11,9 @@ ToDo :
 </span>  
 
 ### HOW TO
-Open `index.html`
+Open `/cool-calculator/index.html`
+
 
 ***
 
-<div align="center">Hope you had a good time here. If you liked the project, leave a ⭐ and visit <a href="https://github.com/ArziPL">my profile</a> to send feedback, check other projects, or make something cool together</p> 
+<div align="center">Hope you had a good time here. If you liked the project, leave a ⭐ and visit <a href="https://github.com/ArziPL">my profile</a> to send feedback, check other projects, or make something cool together</p></div> 
